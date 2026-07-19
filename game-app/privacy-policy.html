@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - みんなでワイワイ</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      background: #fff;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+    .app-name {
+      font-size: 1em;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .effective-date {
+      font-size: 0.9em;
+      color: #888;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: #1a1a1a;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    h3 {
+      font-size: 1.1em;
+      color: #333;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p { margin-bottom: 12px; }
+    ul, ol {
+      margin: 8px 0 16px 24px;
+    }
+    li { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 0.95em;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f5f5f5;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .note {
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 0.95em;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.85em;
+      color: #888;
+      text-align: center;
+    }
+    a { color: #1976d2; }
+    @media (max-width: 600px) {
+      .container { padding: 24px 16px; }
+      h1 { font-size: 1.5em; }
+      table { font-size: 0.85em; }
+      th, td { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="app-name">みんなでワイワイ</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="effective-date">施行日: 2026年2月28日</p>
+
+    <p>
+      本プライバシーポリシー（以下「本ポリシー」）は、kazukazu2027（以下「開発者」）が提供するモバイルアプリケーション
+      「みんなでワイワイ」（iOS: com.kazukazu2027.minnadewaiwai / Android: com.kazukazu2027.minnadewaiwai、以下「本アプリ」）における、
+      ユーザーの個人情報およびデータの取り扱いについて定めるものです。
+    </p>
+    <p>
+      本アプリをご利用いただくことにより、本ポリシーに記載されたデータの収集・利用に同意いただいたものとみなします。
+    </p>
+
+    <!-- 1. 収集するデータ -->
+    <h2>1. 収集するデータ</h2>
+    <p>本アプリでは、以下の種類のデータを収集・利用しています。</p>
+
+    <h3>1-1. 自動的に収集されるデータ</h3>
+    <ul>
+      <li><strong>利用状況データ:</strong> アプリの起動回数、画面遷移、ゲームプレイイベント、利用時間などの操作ログ（Firebase Analytics経由）</li>
+      <li><strong>ユーザープロパティ:</strong> 広告非表示状態（is_ad_free）、累計ゲームプレイ回数（total_games_played）、プレミアムティア（premium_tier）</li>
+      <li><strong>クラッシュレポート:</strong> アプリの異常終了時のスタックトレース、デバイス情報（OS バージョン、デバイスモデル、メモリ状態など）（Firebase Crashlytics経由）</li>
+      <li><strong>広告関連データ:</strong> 広告の表示・クリック・視聴に関するインタラクションデータ、広告識別子（Google AdMob経由）</li>
+      <li><strong>デバイス識別子:</strong> 広告ID（IDFA/GAID）。iOSではApp Tracking Transparency（ATT）フレームワークにより、トラッキング許可をリクエストします</li>
+    </ul>
+
+    <h3>1-2. 端末内にローカル保存されるデータ</h3>
+    <p>以下のデータはお使いの端末内（AsyncStorage）にのみ保存され、外部サーバーへ送信されることはありません。</p>
+    <ul>
+      <li>テーマ設定（ダークモード等の外観設定）</li>
+      <li>プレイヤー名・性別</li>
+      <li>プレミアム購入状態</li>
+      <li>ゲーム履歴</li>
+      <li>通知設定</li>
+      <li>オンボーディング表示フラグ</li>
+    </ul>
+
+    <h3>1-3. ユーザーが任意で提供するデータ</h3>
+    <ul>
+      <li><strong>フィードバック:</strong> アプリ内のフィードバック機能をご利用いただいた場合、評価（レーティング）およびテキストコメントがSlack Webhook経由で開発者に送信されます。個人を特定する情報（メールアドレス等）は収集しません。</li>
+      <li><strong>アプリ内課金:</strong> 購入処理はApple App Store またはGoogle Play Storeを通じて行われます。クレジットカード情報等の決済情報を開発者が直接取得することはありません。</li>
+    </ul>
+
+    <!-- 2. データの利用目的 -->
+    <h2>2. データの利用目的</h2>
+    <p>収集したデータは、以下の目的で利用します。</p>
+    <ul>
+      <li>アプリの機能提供・改善およびバグ修正</li>
+      <li>利用状況の分析によるユーザー体験の向上</li>
+      <li>クラッシュの検知・原因分析および安定性の向上</li>
+      <li>広告の表示（パーソナライズ広告を含む）</li>
+      <li>アプリ内課金の処理・購入状態の管理</li>
+      <li>ユーザーからのフィードバックへの対応</li>
+      <li>ローカル通知によるリマインダーの送信（毎週金曜18:00、土曜15:00）</li>
+    </ul>
+
+    <!-- 3. 第三者サービス -->
+    <h2>3. 第三者サービス</h2>
+    <p>本アプリでは、以下の第三者サービスを利用しています。各サービスは独自のプライバシーポリシーに基づいてデータを処理します。</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>サービス</th>
+          <th>提供元</th>
+          <th>目的</th>
+          <th>プライバシーポリシー</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Analytics</td>
+          <td>Google LLC</td>
+          <td>利用状況分析</td>
+          <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase プライバシー</a></td>
+        </tr>
+        <tr>
+          <td>Firebase Crashlytics</td>
+          <td>Google LLC</td>
+          <td>クラッシュレポート</td>
+          <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase プライバシー</a></td>
+        </tr>
+        <tr>
+          <td>Google AdMob</td>
+          <td>Google LLC</td>
+          <td>広告配信（バナー、インタースティシャル、リワード）</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></td>
+        </tr>
+        <tr>
+          <td>Apple App Store</td>
+          <td>Apple Inc.</td>
+          <td>アプリ内課金処理</td>
+          <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple プライバシーポリシー</a></td>
+        </tr>
+        <tr>
+          <td>Google Play Store</td>
+          <td>Google LLC</td>
+          <td>アプリ内課金処理</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></td>
+        </tr>
+        <tr>
+          <td>Slack</td>
+          <td>Salesforce, Inc.</td>
+          <td>フィードバック受信（Webhook）</td>
+          <td><a href="https://slack.com/intl/ja-jp/privacy-policy" target="_blank" rel="noopener">Slack プライバシーポリシー</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 4. 広告とトラッキング -->
+    <h2>4. 広告とトラッキング</h2>
+    <p>
+      本アプリではGoogle AdMobを利用して広告を表示しています。AdMobはパーソナライズ広告を配信するために、
+      広告識別子（IDFA/GAID）やデバイス情報を収集する場合があります。
+    </p>
+    <p>
+      <strong>iOS端末をご利用の場合:</strong>
+      App Tracking Transparency（ATT）フレームワークにより、アプリの初回起動時にトラッキング許可のダイアログが表示されます。
+      トラッキングを許可しない場合でも、パーソナライズされていない広告が表示されます。
+    </p>
+    <p>
+      <strong>広告の非表示:</strong>
+      アプリ内課金により広告を非表示にすることが可能です。広告を非表示にした場合、AdMobによるデータ収集は行われません。
+    </p>
+
+    <!-- 5. プッシュ通知 -->
+    <h2>5. 通知</h2>
+    <p>
+      本アプリでは、ローカルプッシュ通知を使用しています（毎週金曜18:00および土曜15:00にスケジュール通知）。
+      これらはすべて端末内でスケジュールされるローカル通知であり、外部のプッシュ通知サーバーを使用していません。
+      通知はアプリ内の設定またはOS の設定から無効にすることができます。
+    </p>
+
+    <!-- 6. データの保存と保持 -->
+    <h2>6. データの保存と保持期間</h2>
+    <ul>
+      <li><strong>ローカルデータ（AsyncStorage）:</strong> お使いの端末にのみ保存されます。アプリをアンインストールすると削除されます。</li>
+      <li><strong>Firebase Analytics データ:</strong> Googleのデータ保持ポリシーに準じます（デフォルト14か月）。</li>
+      <li><strong>Firebase Crashlytics データ:</strong> Googleのデータ保持ポリシーに準じます（デフォルト90日間）。</li>
+      <li><strong>AdMob データ:</strong> Googleのプライバシーポリシーに準じた期間保持されます。</li>
+      <li><strong>フィードバックデータ:</strong> Slackワークスペース内に保存され、対応完了後合理的な期間内に削除します。</li>
+    </ul>
+
+    <!-- 7. データの安全性 -->
+    <h2>7. データの安全性</h2>
+    <p>
+      開発者は、ユーザーのデータを保護するために合理的な技術的・組織的措置を講じています。
+      ただし、インターネットを介したデータ送信や電子的な保存方法において、100%の安全性を保証することはできません。
+    </p>
+
+    <!-- 8. ユーザーの権利 -->
+    <h2>8. ユーザーの権利</h2>
+    <p>ユーザーは、以下の権利を有しています。</p>
+    <ul>
+      <li><strong>トラッキングの拒否:</strong> iOS端末ではATTダイアログで「許可しない」を選択できます。Android端末ではOS設定から広告IDをリセットまたは無効化できます。</li>
+      <li><strong>広告のパーソナライズ停止:</strong> トラッキングを拒否することで、パーソナライズ広告を停止できます。</li>
+      <li><strong>ローカルデータの削除:</strong> アプリをアンインストールすることで、端末内のすべてのデータが削除されます。</li>
+      <li><strong>通知の停止:</strong> アプリ内設定またはOSの設定から通知を無効にできます。</li>
+      <li><strong>データの開示・削除請求:</strong> 収集されたデータの開示または削除を希望される場合は、下記のお問い合わせ先までご連絡ください。</li>
+    </ul>
+
+    <h3>EU/EEA在住のユーザー様へ（GDPR）</h3>
+    <p>
+      EU一般データ保護規則（GDPR）に基づき、EU/EEA在住のユーザーは以下の追加的な権利を有します。
+    </p>
+    <ul>
+      <li>個人データへのアクセス権</li>
+      <li>個人データの訂正権</li>
+      <li>個人データの消去権（忘れられる権利）</li>
+      <li>データ処理の制限権</li>
+      <li>データポータビリティ権</li>
+      <li>異議申立権</li>
+    </ul>
+    <p>
+      本アプリにおけるデータ処理の法的根拠は、「正当な利益」（アプリの改善・安定性維持）および「同意」（トラッキング・パーソナライズ広告）です。
+      上記の権利を行使される場合は、下記のお問い合わせ先までご連絡ください。
+    </p>
+
+    <h3>カリフォルニア州在住のユーザー様へ（CCPA）</h3>
+    <p>
+      カリフォルニア州消費者プライバシー法（CCPA）に基づき、カリフォルニア州在住のユーザーは、
+      個人情報の収集・利用に関する情報開示の請求、個人情報の削除請求、および個人情報の販売に対するオプトアウトの権利を有します。
+      なお、開発者はユーザーの個人情報を第三者に販売することはありません。
+    </p>
+
+    <!-- 9. 児童のプライバシー -->
+    <h2>9. 年齢制限と未成年者のプライバシー</h2>
+    <div class="note">
+      <strong>重要:</strong>
+      本アプリは飲酒を伴うパーティーゲームを含むコンテンツを提供しています。
+      対象年齢は17歳以上（iOS）/ 18歳以上（Android）です。
+    </div>
+    <p>
+      本アプリは17歳未満の方を対象としておらず、17歳未満の方から意図的に個人情報を収集することはありません。
+      17歳未満の方が本アプリを利用していることが判明した場合、速やかに当該データを削除する措置を講じます。
+      未成年者のデータ収集に関して懸念がある場合は、下記のお問い合わせ先までご連絡ください。
+    </p>
+
+    <!-- 10. 本ポリシーの変更 -->
+    <h2>10. 本ポリシーの変更</h2>
+    <p>
+      開発者は、必要に応じて本ポリシーを変更することがあります。
+      重要な変更が行われた場合は、アプリ内での通知またはアプリストアの説明文を通じてお知らせいたします。
+      変更後のポリシーは、本ページに掲載した時点で効力を生じるものとします。
+      最新のポリシーを定期的にご確認いただくことをお勧めします。
+    </p>
+
+    <!-- 11. お問い合わせ -->
+    <h2>11. お問い合わせ</h2>
+    <p>本ポリシーに関するご質問、データの開示・削除請求、その他のお問い合わせは、以下の連絡先までお願いいたします。</p>
+    <ul>
+      <li><strong>開発者:</strong> 小野和聖</li>
+      <li><strong>メールアドレス:</strong> <a href="mailto:minna.waiwai.app@gmail.com">minna.waiwai.app@gmail.com</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2026 小野和聖 - みんなでワイワイ</p>
+      <p>最終更新日: 2026年2月28日</p>
+    </footer>
+  </div>
+</body>
+</html>
